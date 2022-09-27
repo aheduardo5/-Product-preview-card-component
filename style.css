@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --VeryyDarkcyan: hsl(158, 36%, 21%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.discount {
+  background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+.price {
+  font-family: "Fraunces", serif;
+}
+
+/* SECTION 1 */
+.card-container {
+  margin: 100px auto;
+  width: 375px;
+  height: 667px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 300ms;
+}
+
+.card-container .section1 {
+  background-image: url(images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.card-container .section2 {
+  background-color: var(--White);
+  height: 368px;
+  padding: 25px;
+}
+
+.section2 .subtitle {
+  color: var(--Darkgrayishblue);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  height: 40px;
+}
+.section2 h1 {
+  font-size: 1.9em;
+  font-weight: 700;
+  height: 100px;
+}
+
+.section2 .description {
+  color: var(--Darkgrayishblue);
+  line-height: 25px;
+  height: 110px;
+  font-size: 1em;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.price-container .price {
+  color: var(--Darkcyan);
+  font-size: 2em;
+}
+.price-container .discount {
+  background-color: var(--White);
+  color: var(--Darkgrayishblue);
+  text-decoration: line-through;
+  font-size: 1em;
+  margin-left: 15px;
+}
+
+a.btn-add {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: var(--Darkcyan);
+  color: white;
+  text-align: center;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.btn-add::before {
+  content: "\f07a";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  margin-right: 10px;
+  color: var(--White);
+}
+
+.btn-add:hover {
+  background-color: var(--VeryyDarkcyan);
+  transition: 300ms;
+}
+/* FOOTER */
+.attribution {
+  color: var(--Verydarkblue);
+  font-weight: 700;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:900px){
+    .card-container{
+        display: flex;
+        margin: 170px auto;
+        width: 600px;
+        height: 451px;
+        border-radius: 10px;
+        margin-bottom: 130px;
+        overflow: hidden;
+    }   
+    .card-container .section1 {
+        background-image: url(images/image-product-desktop.jpg);
+        width: 300px;
+        height: 100%;
+      }
+      .card-container .section2 {
+        background-color: var(--White);
+        height: 89%;
+        width: 300px;
+        padding: 25px;
+      }
+}
