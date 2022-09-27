@@ -14,10 +14,9 @@
   padding: 0;
 }
 
-body,
-.discount {
+body {
   background-color: var(--Cream);
-  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 h1,
 .price {
@@ -52,19 +51,19 @@ h1,
   color: var(--Darkgrayishblue);
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  height: 40px;
+  height: 30px;
 }
 .section2 h1 {
   font-size: 1.9em;
   font-weight: 700;
-  height: 100px;
+  height: 95px;
 }
 
-.section2 .description {
+.section2 p.description {
   color: var(--Darkgrayishblue);
-  line-height: 25px;
-  height: 110px;
-  font-size: 1em;
+  line-height: 28px;
+  height: 115px;
+  font-size: 1.39em;
 }
 
 .price-container {
@@ -76,8 +75,8 @@ h1,
   color: var(--Darkcyan);
   font-size: 2em;
 }
-.price-container .discount {
-  background-color: var(--White);
+.price-container span.discount {
+  font-family: "Montserrat", sans-serif;
   color: var(--Darkgrayishblue);
   text-decoration: line-through;
   font-size: 1em;
@@ -96,7 +95,7 @@ a.btn-add {
   font-size: 1em;
   text-decoration: none;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .btn-add::before {
@@ -124,25 +123,28 @@ a.btn-add {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width:900px){
-    .card-container{
-        display: flex;
-        margin: 170px auto;
-        width: 600px;
-        height: 451px;
-        border-radius: 10px;
-        margin-bottom: 130px;
-        overflow: hidden;
-    }   
-    .card-container .section1 {
-        background-image: url(images/image-product-desktop.jpg);
-        width: 300px;
-        height: 100%;
-      }
-      .card-container .section2 {
-        background-color: var(--White);
-        height: 89%;
-        width: 300px;
-        padding: 25px;
-      }
+@media screen and (min-width: 900px) {
+  .card-container {
+    display: flex;
+    margin: 170px auto;
+    width: 600px;
+    height: 451px;
+    border-radius: 10px;
+    margin-bottom: 130px;
+    overflow: hidden;
+  }
+  .card-container .section1 {
+    background-image: url(images/image-product-desktop.jpg);
+    width: 300px;
+    height: 100%;
+  }
+  .card-container .section2 {
+    background-color: var(--White);
+    height: 89%;
+    width: 300px;
+    padding: 25px;
+  }
+  .section2 p.description {
+    height: 140px;
+  }
 }
